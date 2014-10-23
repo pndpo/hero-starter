@@ -36,7 +36,7 @@ Board.prototype.initializeBoard = function() {
 
 // Returns false if the given coordinates are out of range
 Board.prototype.validCoordinates = function(distanceFromTop, distanceFromLeft) {
-  return (!(distanceFromTop < 0 || distanceFromLeft < 0 || 
+  return (!(distanceFromTop < 0 || distanceFromLeft < 0 ||
       distanceFromTop > this.lengthOfSide - 1 || distanceFromLeft > this.lengthOfSide - 1));
 }
 

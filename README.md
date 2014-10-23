@@ -75,7 +75,7 @@ This stages your hero.js file for a commit
 ```
 git commit
 ```
-This will bring up a prompt in your terminal for you to write a message. This message will help you keep track of what changes you made and when you made them. Go ahead and type something descriptive of the change you just made. 
+This will bring up a prompt in your terminal for you to write a message. This message will help you keep track of what changes you made and when you made them. Go ahead and type something descriptive of the change you just made.
   * When done, close the window by pressing "ESC", ":", "w" and "q".
   * Now, Git knows about your changes and has a record of them. Before moving on to 'pushing,' let's pause and take a look at what is going on in hero.js.
 
@@ -87,7 +87,7 @@ Inside of hero.js is some Javascript code. If you have never taken a look at Jav
   * [Code School](https://www.codeschool.com/)
   * [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 
-If you take a look at hero.js, you will notice that there are different move functions - most of which are commented out. Each function describes a specific type of hero behavior. 
+If you take a look at hero.js, you will notice that there are different move functions - most of which are commented out. Each function describes a specific type of hero behavior.
 
   * The "Northerner" cares about moving North...all the time.
   * The "Blind Man" moves randomly around the board.

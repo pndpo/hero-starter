@@ -176,11 +176,23 @@ var moves = {
   // This hero will try really hard not to die.
   coward : function(gameData, helpers) {
     return helpers.findNearestHealthWell(gameData);
-  }
- };
+  },
+
+  greedyWonderer : function(gameData, helpers) {
+    var myHero = gameData.activeHero;
+    var health = myHero.health
+    if (health < 40) {
+      return helpers.findNearestHealthWell(gameData);
+    } else if ( health >= 40 && health < 60) {
+      return helpers.findNearestWeakerEnemy(gameData);
+    }  else {
+      return helpers.findNearestNonTeamDiamondMine(gameData);
+    }
+    }
+  };
 
 //  Set our heros strategy
-var  move =  moves.aggressor;
+var  move =  moves.greedyWonderer;
 
 // Export the move function here
 module.exports = move;
